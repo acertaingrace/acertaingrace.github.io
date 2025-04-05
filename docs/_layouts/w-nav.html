@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     {% include head-custom.html %}
 
 {% seo %}
@@ -28,6 +29,10 @@
           <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
       </div>
+      <button class="hamburger">
+       <!-- material icons https://material.io/resources/icons/ -->
+       <i class="menuButton material-icons" style="font-size: 2rem;">menu</i>
+     </button>
     </header>
 
     <div class="container">
@@ -35,6 +40,11 @@
         {{ content }}
       </section>
     </div>
+    <footer>
+    <p>Favicon: <a href="https://www.flaticon.com/free-icon/heart-wings_3383801" title="wings icons">Heart Wings icon created by Darius Dan - Flaticon</a></p>
+    <p>Theme: <a href="https://github.com/pages-themes/hacker">jekyll-theme-hacker for GitHub Pages</a></p>
+    </footer>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
 

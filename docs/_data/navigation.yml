@@ -10,13 +10,15 @@
       url: /ricing/icons
     - title: Shimejis 
       url: /ricing/shimejis
-    - title: Sub-item 3
-      url: /group/si3
+    - title: Colour Palettes 
+      url: /ricing/colour-palettes
 - title: Software
   url: /software/
   sublinks:
     - title: OneNote Alts
       url: /software/OneNote%20Alts
+    - title: OneNote to Trilium
+      url: /software/onenote-to-trilium
 - title: Hosting
   url: /hosting/
   sublinks:

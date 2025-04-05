@@ -18,3 +18,60 @@ nav {
 body {
   padding-right: 180px;
 }
+
+/* Hamburger button */
+/* credit to GDSC USYD 2023 workshop */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  /*add additional properties below*/
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  position: fixed;
+  right: 10%;
+  top: 30px;
+}
+
+@media only screen and (max-width: 900px){
+  .hamburger{
+    display: block;
+    color: #90a959;
+  }
+
+  body {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  nav {
+    width: 0;
+  }
+
+  .menu {
+    background: black;
+    padding-top: 4rem;
+  
+    position: fixed;
+    transform: translateY(-105%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    height: 100%;
+  }
+}
+
+.menuButton:hover {
+  color: #8c8c8c;
+}
+
+.showMenu {
+  transform: translateY(-5%);
+}
+
+footer {
+  border-top: 1px dashed #b5e853;
+}
