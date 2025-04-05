@@ -30,10 +30,11 @@ domain: acertaingrace.github.io
 github_username: acertaingrace 
 
 # Build settings
-remote-theme: pages-themes/hacker@v0.2.0
+#remote-theme: pages-themes/hacker@v0.2.0
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+#  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
