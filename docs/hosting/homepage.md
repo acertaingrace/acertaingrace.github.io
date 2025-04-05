@@ -5,7 +5,7 @@ layout: w-nav
 
 # homepage
 
-This is a very aesthetic yet simple homepage.
+I'm using [gethomepage/homepage](https://github.com/gethomepage/homepage). This is a very aesthetic yet simple homepage.
 
 ## Service Widgets
 
@@ -17,14 +17,14 @@ I used customapi for two widgets (soon to be three):
 
 ### Trilium
 
-Trilium was the easiest to set up. It had a well-defined api and uses an app token.
+Trilium was the easiest to set up. It had a well-documented api ([official](https://github.com/zadam/trilium/blob/master/src/etapi/etapi.openapi.yaml), [Trilium Rocks](https://trilium.rocks/etapi)) and uses an app token.
 
 ```
         widget:
           type: customapi
           url: http://<address>:<port>/trilium/etapi/app-info
           refreshInterval: 9000000000   # random big number to avoid refreshing too often
-          method: GET 					# not necessary
+          method: GET                   # not necessary
           headers:
             Authorization: <etapi_token>
           mappings:

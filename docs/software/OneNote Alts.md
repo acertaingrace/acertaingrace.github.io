@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: w-nav 
 title: "OneNote Alts"
-permalink: /onenote-alts
 ---
 
 # OneNote Alternatives for Linux

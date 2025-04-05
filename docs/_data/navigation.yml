@@ -12,3 +12,13 @@
       url: /ricing/shimejis
     - title: Sub-item 3
       url: /group/si3
+- title: Software
+  url: /software/
+  sublinks:
+    - title: OneNote Alts
+      url: /software/OneNote%20Alts
+- title: Hosting
+  url: /hosting/
+  sublinks:
+    - title: homepage
+      url: /hosting/homepage

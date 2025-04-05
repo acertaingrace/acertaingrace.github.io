@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: w-nav 
 title: "Ricing"
 permalink: /ricing
 ---
