@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 48.00 48.00"
+   fill="#b52a5b"
+   stroke="#b52a5b"
+   stroke-width="1.9200000000000004"
+   transform="rotate(0)"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="tailscale-svgrepo-com.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs13">
+    <linearGradient
+       id="linearGradient18"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#71f79f;stop-opacity:1;"
+         offset="0"
+         id="stop19" />
+      <stop
+         style="stop-color:#7cb7ff;stop-opacity:1;"
+         offset="1"
+         id="stop20" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient18"
+       id="linearGradient20"
+       x1="6.8178368"
+       y1="14.864086"
+       x2="41.182159"
+       y2="33.135921"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.6325"
+     inkscape:cx="400"
+     inkscape:cy="400"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round" />
+  <g
+     id="SVGRepo_iconCarrier"
+     style="stroke:url(#linearGradient20)">
+    <defs
+       id="defs1"
+       style="stroke:url(#linearGradient20)">
+      <style
+         id="style1"
+         style="stroke:url(#linearGradient20)">.a{fill:none;stroke:#b52a5b;stroke-linecap:round;stroke-linejoin:round;}</style>
+    </defs>
+    <circle
+       class="a"
+       cx="24"
+       cy="24"
+       r="4.5"
+       id="circle1"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="38"
+       cy="24"
+       r="4.5"
+       id="circle2"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="38"
+       cy="10"
+       r="4.5"
+       id="circle3"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="24"
+       cy="10"
+       r="4.5"
+       id="circle4"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="10"
+       cy="10"
+       r="4.5"
+       id="circle5"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="10"
+       cy="24"
+       r="4.5"
+       id="circle6"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="10"
+       cy="38"
+       r="4.5"
+       id="circle7"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="24"
+       cy="38"
+       r="4.5"
+       id="circle8"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="38"
+       cy="38"
+       r="4.5"
+       id="circle9"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="24"
+       cy="38"
+       r="2"
+       id="circle10"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="24"
+       cy="24"
+       r="2"
+       id="circle11"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="10"
+       cy="24"
+       r="2"
+       id="circle12"
+       style="stroke:url(#linearGradient20)" />
+    <circle
+       class="a"
+       cx="38"
+       cy="24"
+       r="2"
+       id="circle13"
+       style="stroke:url(#linearGradient20)" />
+  </g>
+</svg>
