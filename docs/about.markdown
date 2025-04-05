@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: w-nav 
 title: About
 permalink: /about/
 ---
