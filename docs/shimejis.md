@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Shimejis"
 permalink: /shimejis
 ---
