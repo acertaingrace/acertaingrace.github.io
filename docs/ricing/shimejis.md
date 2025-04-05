@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Shimejis"
-permalink: /shimejis
 ---
 
 # Shimejis

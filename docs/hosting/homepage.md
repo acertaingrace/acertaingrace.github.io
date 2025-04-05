@@ -1,5 +1,6 @@
 ---
 title: homepage
+layout: w-nav
 ---
 
 # homepage

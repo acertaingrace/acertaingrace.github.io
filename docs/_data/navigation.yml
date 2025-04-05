@@ -1,0 +1,14 @@
+# Belongs at: /_data/navigation.yml
+
+- title: Home
+  url: /
+
+- title: Ricing 
+  url: /ricing/
+  sublinks:
+    - title: Icons 
+      url: /ricing/icons
+    - title: Shimejis 
+      url: /ricing/shimejis
+    - title: Sub-item 3
+      url: /group/si3
