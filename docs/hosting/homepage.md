@@ -23,7 +23,7 @@ Trilium was the easiest to set up. It had a well-defined api and uses an app tok
           type: customapi
           url: http://<address>:<port>/trilium/etapi/app-info
           refreshInterval: 9000000000   # random big number to avoid refreshing too often
-          method: GET 
+          method: GET 					# not necessary
           headers:
             Authorization: <etapi_token>
           mappings:
@@ -47,6 +47,31 @@ server{
     location /tt-rss/api {
         proxy_pass http://127.0.0.1:<port>/tt-rss/api/;
     }
+```
+
+tt-rss uses a session id (sid) to authenticate.
+
+You can 'login' and get a sid using curl. Below is from tt-rss official [api docs](https://tt-rss.org/ApiReference/#testing-api-calls-using-curl).
+
+```
+curl -d '{"op":"login","user":"you","password":"xxx"}' http://example.com/tt-rss/api/
+```
+
+This widget config shows the number of unread articles.
+
+```
+        widget:
+          type: customapi
+          url: http://<address>:<port>/tt-rss/api
+          refreshInterval: 900000 			# 15 min, tt-rss' refresh interval
+          method: POST
+          requestBody: 
+            sid: <sid>						# obtained using curl 
+            op: getUnread
+          mappings:
+            - field: content.unread
+              label: Unread
+              format: number
 ```
 
 ### calibre
