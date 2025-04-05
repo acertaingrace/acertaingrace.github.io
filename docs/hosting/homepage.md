@@ -36,4 +36,9 @@ server{
 
 ### calibre
 
-Homepage has a built-in widget for calibre-web, but not one for the calibre content server. The difficulty with this is that I'm using digest authentication (because I'm not using https), which means that the authentication header requires constant update because the nonce becomes stale. The timeout for the nonce is an hour according to calibre's source code.
+Homepage has a built-in widget for calibre-web, but not one for the calibre content server. The difficulty with this is that I'm using digest authentication (because I'm not using https), which means that the authentication header requires constant update because the nonce becomes stale. The timeout for the nonce is an hour according to calibre's source code [\[x\]](https://github.com/kovidgoyal/calibre/blob/206307993ca9f88e422d12a218bf6390643743a9/src/calibre/srv/auth.py).
+
+```
+# line 22 src/calibre/srv/auth.py
+MAX_AGE_SECONDS = 3600
+```
