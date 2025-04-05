@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Ricing"
-permalink: /ricing
+title: "Shimejis"
+permalink: /shimejis
 ---
 
 # Shimejis
