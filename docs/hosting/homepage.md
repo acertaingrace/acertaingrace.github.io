@@ -84,3 +84,18 @@ MAX_AGE_SECONDS = 3600
 ```
 
 The API uses AJAX, defined in [src/calibre/srv/ajax.py](https://github.com/kovidgoyal/calibre/blob/master/src/calibre/srv/ajax.py).
+
+This shows the numbers of books in the default Calibre library.
+
+```
+        widget:
+          type: customapi
+          url: http://<address>:<port>/calibre/ajax/search
+          refreshInterval: 2629746000		# one month
+          method: GET
+          headers:
+            Authorization: Digest username="<...> # obtained by putting the api url in the browser and copying the authorisation header
+          mappings:
+            - field: num_books_without_search
+              label: '# of books'
+```
