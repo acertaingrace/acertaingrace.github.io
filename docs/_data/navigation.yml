@@ -4,7 +4,7 @@
   url: /
 
 - title: Ricing 
-  url: /ricing/
+  url: /ricing
   sublinks:
     - title: Icons 
       url: /ricing/icons
@@ -13,14 +13,14 @@
     - title: Colour Palettes 
       url: /ricing/colour-palettes
 - title: Software
-  url: /software/
+  url: /software
   sublinks:
     - title: OneNote Alts
       url: /software/OneNote%20Alts
     - title: OneNote to Trilium
       url: /software/onenote-to-trilium
 - title: Hosting
-  url: /hosting/
+  url: /hosting
   sublinks:
     - title: homepage
       url: /hosting/homepage
