@@ -7,13 +7,17 @@ layout: w-nav
 
 I'm using [gethomepage/homepage](https://github.com/gethomepage/homepage). This is a very aesthetic yet simple homepage.
 
+<p align="center">
+  <img src="/assets/images/homepage-screenshot.png" alt="Screenshot of my homepage"/>
+</p>
+
 ## Service Widgets
 
-I used customapi for two widgets (soon to be three):
+I used customapi for three widgets:
 
 * Trilium
 * tt-rss
-* calibre (under works)
+* calibre
 
 ### Trilium
 
@@ -42,12 +46,10 @@ This one took me ages to figure out the error. I thought I was setting up my rev
 server{
     <server config>
 
-    location /tt-rss/ {
-        proxy_pass http://127.0.0.1:<port>$request_uri;
-    }
     location /tt-rss/api {
         proxy_pass http://127.0.0.1:<port>/tt-rss/api/;
     }
+}
 ```
 
 tt-rss uses a session id (sid) to authenticate.
@@ -86,7 +88,7 @@ MAX_AGE_SECONDS = 3600
 
 The API uses AJAX, defined in [src/calibre/srv/ajax.py](https://github.com/kovidgoyal/calibre/blob/master/src/calibre/srv/ajax.py).
 
-This shows the numbers of books in the default Calibre library.
+This following shows the numbers of books in the default Calibre library.
 
 ```yaml
         widget:
@@ -102,3 +104,28 @@ This shows the numbers of books in the default Calibre library.
             - field: num_books_without_search
               label: '# of books'
 ```
+
+To get the 'Authorization' header programmatically, I use a Bash script to run curl and extract the header into an .env file that will substitute the value in the service.yaml file i.e.:
+
+```yaml
+headers:
+  {{HOMEPAGE_FILE_CALIBRE}}
+```
+
+To set the substitution, the docker compose file needs to have:
+
+```docker
+   environment:
+       HOMEPAGE_FILE_CALIBRE: ./config/.env
+```
+
+The Bash file is placed in the config folder and writes to the .env file \[[x](https://stackoverflow.com/a/38922070\), [x](https://stackoverflow.com/a/5922720), [x](https://stackoverflow.com/a/27289059), [x](https://askubuntu.com/a/731237)]:
+
+```bash
+#!/bin/bash
+
+curl -Lvso /dev/null 'http://<address>:<port>/calibre/ajax/search' --digest -u <username>:<password> 2> .tenv 
+sed '/Authorization/!d' .tenv | cut -c 3- > .env
+```
+
+The Bash script will run every hour using systemd timers \[[x](https://opensource.com/article/20/7/systemd-timers), [x](https://unix.stackexchange.com/questions/704109/configure-systemd-timer-to-run-every-hour-after-first-run)\]. The service/timer files are in the [repo]. You place them in `/etc/systemd/system` and run `systemctl enable homepage-calibre.service` (to automatically restart on boot) and `systemctl start homepage-calibre.service`.

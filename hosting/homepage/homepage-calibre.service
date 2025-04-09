@@ -1,0 +1,13 @@
+# place in /etc/systemd/system
+
+[Unit]
+Description=Get digest auth header for Calibre API
+Wants=homepage-calibre.timer
+
+[Service]
+WorkingDirectory=/home/<username>/homepage/config
+Type=oneshot
+ExecStart=/home/<username>/homepage/config/test.sh
+
+[Install]
+WantedBy=multi-user.target

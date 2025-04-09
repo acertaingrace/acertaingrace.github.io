@@ -1,0 +1,13 @@
+# place in /etc/systemd/system
+
+[Unit]
+Description=Get digest auth header for Calibre API
+Requires=homepage-calibre.service
+
+[Timer]
+Unit=homepage-calibre.service
+OnStartupSec=30min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
