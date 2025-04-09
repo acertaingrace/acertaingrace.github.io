@@ -7,7 +7,7 @@ Wants=homepage-calibre.timer
 [Service]
 WorkingDirectory=/home/<username>/homepage/config
 Type=oneshot
-ExecStart=/home/<username>/homepage/config/test.sh
+ExecStart=/home/<username>/homepage/config/homepage-calibre-auth.sh
 
 [Install]
 WantedBy=multi-user.target

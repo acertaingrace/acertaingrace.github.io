@@ -88,7 +88,7 @@ MAX_AGE_SECONDS = 3600
 
 The API uses AJAX, defined in [src/calibre/srv/ajax.py](https://github.com/kovidgoyal/calibre/blob/master/src/calibre/srv/ajax.py).
 
-This following shows the numbers of books in the default Calibre library.
+The following shows the numbers of books in the default Calibre library.
 
 ```yaml
         widget:
@@ -107,10 +107,12 @@ This following shows the numbers of books in the default Calibre library.
 
 To get the 'Authorization' header programmatically, I use a Bash script to run curl and extract the header into an .env file that will substitute the value in the service.yaml file i.e.:
 
+{% raw %}
 ```yaml
 headers:
   {{HOMEPAGE_FILE_CALIBRE}}
 ```
+{% endraw %}
 
 To set the substitution, the docker compose file needs to have:
 
@@ -128,4 +130,4 @@ curl -Lvso /dev/null 'http://<address>:<port>/calibre/ajax/search' --digest -u <
 sed '/Authorization/!d' .tenv | cut -c 3- > .env
 ```
 
-The Bash script will run every hour using systemd timers \[[x](https://opensource.com/article/20/7/systemd-timers), [x](https://unix.stackexchange.com/questions/704109/configure-systemd-timer-to-run-every-hour-after-first-run)\]. The service/timer files are in the [repo]. You place them in `/etc/systemd/system` and run `systemctl enable homepage-calibre.service` (to automatically restart on boot) and `systemctl start homepage-calibre.service`.
+The Bash script will run every hour using systemd timers \[[x](https://opensource.com/article/20/7/systemd-timers), [x](https://unix.stackexchange.com/questions/704109/configure-systemd-timer-to-run-every-hour-after-first-run)\]. The service/timer files are in the [repo](https://github.com/acertaingrace/acertaingrace.github.io/tree/main/hosting/homepage). You place them in `/etc/systemd/system` and run `systemctl enable homepage-calibre.service` (to automatically restart on boot) and `systemctl start homepage-calibre.service`.
