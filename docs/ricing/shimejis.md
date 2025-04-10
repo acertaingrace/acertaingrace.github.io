@@ -5,7 +5,7 @@ title: "Shimejis"
 
 # Shimejis
 
-I'm using [@qualitanty/slugcat-shimeji-linux](https://github.com/qualitanty/slugcat-shimeji-linux), for reasons unknown. I can't remember why I didn't use the original repo.
+I'm using [@qualitanty/slugcat-shimeji-linux](https://github.com/qualitanty/slugcat-shimeji-linux), for reasons unknown. I can't remember why I didn't use the original repo; I think it was because of [this Reddit comment](https://www.reddit.com/r/SteamDeck/comments/16os0ay/comment/k33spzg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)? I don't think the Spamton AUR package referenced in that post worked for me.
 
 The shimejis I use currently include:
 
@@ -15,4 +15,4 @@ The shimejis I use currently include:
 * Xie Lian ([creator ig post](https://www.instagram.com/p/CZz6un2M6Gb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) \| [drive link](https://drive.google.com/file/d/1SAQj2d7KRScUdyQb4Oi9ZxGJfSI_Mpro/view))
 * slugcat too ig (I have no idea who this creature is)
 
-I had to fix something for it to work on linux, but I can't remember what… There was definitely something about X11 and Wayland. And missing photos.
+I had to fix something for it to work on linux, but I can't remember what… There was definitely something about X11 and Wayland. And missing photos. I'm looking through the git diffs and I have no idea what is happening. Pretty sure that Reddit comment helped.
