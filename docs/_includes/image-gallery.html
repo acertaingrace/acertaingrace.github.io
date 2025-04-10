@@ -1,0 +1,11 @@
+{% for entry in site.data.icons %}
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="{{ entry.src }}">
+        <img src="{{ entry.src }}" alt="{{ entry.alt }}">
+      </a>
+      <div class="desc">{{ entry.desc }}</div>
+    </div>
+  </div>
+{% endfor%}
+<div class="clearfix"></div>
