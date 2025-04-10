@@ -12,6 +12,10 @@
       url: /ricing/shimejis
     - title: Colour
       url: /ricing/colour-palettes
+    - title: GNOME Ex.
+      url: /ricing/gnome-extensions
+    - title: Ext. Sites
+      url: /ricing/ext-sites
 - title: Software
   url: /software
   sublinks:
@@ -19,6 +23,8 @@
       url: /software/OneNote%20Alts
     - title: OneNote to Trilium
       url: /software/onenote-to-trilium
+    - title: Newsboat
+      url: /software/newsboat
 - title: Hosting
   url: /hosting
   sublinks:
